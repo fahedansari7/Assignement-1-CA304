@@ -8,11 +8,12 @@ CA-304 - index
 body{
 margin:0;
 padding:0;
+height:100vh;
 }
 .header{
 height : 100px;
 width :100%;
-position : absolute;
+position:fixed;
 top:0;
 display : flex;
 align-items: center;
@@ -23,7 +24,7 @@ z-index : 5;
 .footer{
 height : 70px;
 width :100%;
-position : absolute;
+position : fixed;
 bottom:0;
 display : flex;
 align-items: center;
@@ -50,12 +51,18 @@ z-index : 3;
 }
 
 .divHalf{
-height : calc(100% - 190px);
+min-height : calc(100vh - 190px);
+max-height : 100vh;
 width: 50%;
 float : left;
 margin-top:110px;
+margin-bottom:80px;
 }
-
+.divHalfFixed{
+position:fixed;
+top:0;
+right:0;
+}
 .divCentrize{
 display : flex;
 align-items: center;
@@ -70,7 +77,6 @@ object-fit: contain;
 }
 
 .optCard{
-
 color:#152238;
 height : 40px;
 width : 200px;
@@ -152,12 +158,12 @@ text-decoration: none;
 
 
 </div>
-<div class="divHalf divCentrize">
+<div class="divHalf divCentrize divHalfFixed">
 <img src="development.png">
 </div> 	
 </div>
 <div class="footer">
-<h1>Submitted by - Mohd Fahed Ansari </h1>
+<h1>Submitted by - Nikhil Kumar Gupta aka nikzdevz </h1>
 </div>
 </body>
 </html>
